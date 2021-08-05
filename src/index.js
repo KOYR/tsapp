@@ -4,9 +4,19 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import { customStore } from './utils/index';
+import { history } from './redux/asyncReducers'
+
+import Reducers from './redux/asyncReducers';
+export const store = customStore(Reducers);
+
+const div = document.createElement('div');
+div.id = 'root';
+document.body.appendChild(div);
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App store={store} history={history} />
   </React.StrictMode>,
   document.getElementById('root')
 );

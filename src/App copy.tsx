@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 
@@ -12,10 +11,10 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Hello
-          // namea="hello text"
+        // namea="hello text"
         />
-        <Zujian/>
-        <UseStateA/>
+        <Zujian />
+        <UseStateA />
       </header>
     </div>
   );
